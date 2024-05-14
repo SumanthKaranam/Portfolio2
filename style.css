@@ -156,7 +156,7 @@
   /* Header Styles */
   header {
     height: 100vh;
-    min-height: 1200px;
+    min-height: 800px;
     overflow: hidden;
     position: relative;
   }
@@ -175,8 +175,8 @@
     line-height: 1;
     margin: 0;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 65%;
+    top: 60%;
     text-shadow: -1px -1px 0 var(--white), 1px -1px 0 var(--white),
       -1px 1px 0 var(--white), 1px 1px 0 var(--white);
     -webkit-transform: translate(-50%, -50%);
@@ -186,14 +186,14 @@
   }
   
   .intro {
-    font-size: 6em;
+    font-size: 4em;
     margin-bottom: 0;
   }
   
   .lead {
     color: var(--grey);
-    font-size: 2em;
-    margin-bottom: 60px;
+    font-size: 1.5em;
+    margin-bottom: 2em;
   }
 
   .header-btn {
@@ -224,8 +224,10 @@
     border-radius: 50%;
     height: 20em;
     position: absolute;
-    top: calc(45% - 25.5em);
-    left: calc(50% - 25em);
+    /* top: calc(45% - 25.5em);
+    left: calc(50% - 25em); */
+    top: 5%;
+    left: 5%;
     width: 20em;
   }
   
@@ -265,6 +267,7 @@
   .card-container {
     width: 300px;
     height: 300px;
+    padding-top: 15px;
     position: relative;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -528,6 +531,7 @@
     .grid-list {
       grid-template-columns: repeat(3, minmax(100px, 1fr));
     }
+    
   }
   
   @media only screen and (max-width: 600px) {
@@ -539,21 +543,22 @@
   
     .main-photo {
       top: 0;
-      left: 0;
+      left: 5%;
     }
   
     .heading {
-      top: 50%;
-      width: 20em;
+      top: 65%;
+      left:50%;
+      width: 90%;
     }
   
     .intro {
-      font-size: 6em;
+      font-size: 3em;
     }
   
     .lead {
       font-size: 1.5em;
-      width: 100%;
+      margin-bottom: 1em;
     }
   
     .grid-list {
@@ -576,4 +581,3 @@
       grid-template-columns: 1fr;
     }
   }
-  
